@@ -8,4 +8,14 @@ I haven't expected those results from such a small amount of dataset, but it did
 
 In order to run this notebook on your local machine, refer to the instruction given below.
 
-firstly download zip or clone this repository, then run first cell from the notebook(.ipynb file) that you'll find in this repository folder and it'll clone actual yolov5 repository. After that move best.pt file from this repository folder to Yolov5 repository folder and run all the cells. It'll work for sure. 
+1. firstly download zip or clone this repository, 
+2. then run first cell from the notebook(.ipynb file) that you'll find in this repository folder and it'll clone actual yolov5 repository. 
+3. After that move best.pt file from this repository folder to Yolov5 repository folder.
+4. Now specify the path of yolov5 folder as first parameter of torch.hub.load() method as shown below.
+    in my case :- 
+    model = torch.hub.load(r"C:/Users/shant/Jupyter_Notebooks/Drowsiness_Control/yolov5/", 'custom', path="best.pt", force_reload=True, source='local')
+    
+    in your case :-
+    model = torch.hub.load(r"Enter_yolov5_folder_path_from_your_pc_over_here", 'custom', path="best.pt", force_reload=True, source='local')
+
+That's it, now run all the cells. It'll work for sure. 
