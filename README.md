@@ -8,4 +8,4 @@ I haven't expected those results from such a small amount of dataset, but it did
 
 In order to run this notebook on your local machine, refer to the instruction given below.
 
-firstly download zip or clone this repository, then run first cell from the notebook(.ipynb file) that you'll find in this repository folder and it'll clone actual yolov5 repository. After that copy and paste best.pt from this repository folder to Yolov5 repository folder and run all the cells. It'll work for sure. 
+firstly download zip or clone this repository, then run first cell from the notebook(.ipynb file) that you'll find in this repository folder and it'll clone actual yolov5 repository. After that move best.pt file from this repository folder to Yolov5 repository folder and run all the cells. It'll work for sure. 
